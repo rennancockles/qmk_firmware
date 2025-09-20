@@ -9,6 +9,8 @@
 #define ENCODER_DIRECTION_FLIP
 // #define ENCODER_RESOLUTION 4
 
+#define OLED_FONT_H "cocklesgeekfont.c"
+
 #define RGBLIGHT_SLEEP
 #define RGBLIGHT_DEFAULT_ON false
 #define RGBLIGHT_DEFAULT_HUE 170
