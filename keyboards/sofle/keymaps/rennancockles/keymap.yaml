@@ -1,0 +1,61 @@
+layout:
+  qmk_keyboard: sofle/rev1
+  layout_name: LAYOUT
+layers:
+  BASE:
+    - [{t: "`", s: "~"}, {t: 1, s: "!"}, {t: 2, s: "@"}, {t: 3, s: "#"}, {t: 4, s: "$"}, {t: 5, s: "%"}]
+    - [{t: 6, s: "^"}, {t: 7, s: "&"}, {t: 8, s: "*"}, {t: 9, s: "("}, {t: 0, s: ")"}, {t: "-", s: "_"}]
+    - [$$mdi:keyboard-tab$$, Q, W, E, R, T]
+    - [Y, U, I, O, P, $$mdi:backspace-outline$$]
+    - [$$mdi:apple-keyboard-caps$$, A, S, D, F, G]
+    - [H, J, K, L, {t: ";", s: ":"}, {t: "'", s: '"'}]
+    - [$$mdi:apple-keyboard-shift$$, Z, X, C, V, B] 
+    - $$mdi:volume-mute$$
+    - null
+    - [N, M, {t: ",", s: "<"}, {t: ".", s: ">"}, {t: "/", s: "?"}, $$mdi:apple-keyboard-shift$$]
+    - [$$mdi:apple-keyboard-control$$, $$mdi:apple-keyboard-option$$, $$mdi:apple-keyboard-command$$, DROP, $$mdi:keyboard-space$$]
+    - [$$mdi:keyboard-return$$, RAISE, $$mdi:apple-keyboard-command$$, $$mdi:apple-keyboard-option$$, $$mdi:apple-keyboard-control$$]
+  DROP:
+    - [ESC, F1, F2, F3, F4, F5]
+    - [null, null, null, null, null, {t: "=", s: "+"}]
+    - [{t: ▽, type: trans}, F6, F7, F8, F9, F10]
+    - [(, ), +, null, null, null]
+    - [{t: ▽, type: trans}, F11, F12, $$mdi:arrow-down-circle$$, null, null]
+    - ["[", "]", "=", null, null, "|"]
+    - [{t: ▽, type: trans}, $$mdi:undo$$, $$mdi:content-cut$$, $$mdi:content-copy$$, $$mdi:content-paste$$, null]
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - ["{", "}", ";", ":", {t: "\\", s: "|"}, {t: ▽, type: trans}]
+    - [{t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: held}, {t: ▽, type: trans}]
+    - [{t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}]
+  RAISE:
+    - [ESC, null, null, null, PrtScr, null]
+    - [null, null, null, null, null, LnDel]
+    - [{t: ▽, type: trans}, LCD(A), null, null, null, null]
+    - [PgUp, null, $$mdi:arrow-up$$, null, null, $$mdi:backspace-reverse-outline$$]
+    - [{t: ▽, type: trans}, null, null, $$mdi:arrow-down-circle$$, null, null]
+    - [PgDown, $$mdi:arrow-left$$, $$mdi:arrow-down$$, $$mdi:arrow-right$$, null, "|"]
+    - [{t: ▽, type: trans}, $$mdi:undo$$, $$mdi:content-cut$$, $$mdi:content-copy$$, $$mdi:content-paste$$, null]
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - [null, $$mdi:page-previous-outline$$, $$mdi:apps$$, $$mdi:page-next-outline$$, null, {t: ▽, type: trans}]
+    - [{t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}]
+    - [{t: ▽, type: trans}, {t: ▽, type: held}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}]
+  ADJUST:
+    - [$$mdi:lock$$, null, null, null, null, null]
+    - [null, null, null, null, null, null]
+    - [{t: ▽, type: trans}, null, null, null, null, null]
+    - [null, null, null, null, null, null]
+    - [{t: ▽, type: trans}, null, null, null, null, null]
+    - [null, null, null, null, null, null]
+    - [{t: ▽, type: trans}, null, null, null, null, null]
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - [null, null, null, null, null, {t: ▽, type: trans}]
+    - [{t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: held}, {t: ▽, type: trans}]
+    - [{t: ▽, type: trans}, {t: ▽, type: held}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}]
+combos:
+  - {p: [0, 1], k: "ESC", l: ["BASE"]}
+  - {p: [0, 11], k: "$$mdi:lock$$", a: top, o: 0.8, l: ["BASE"]}
+  - {p: [15, 16], k: "=", l: ["BASE"]}
+  - {p: [19, 20], k: "+", l: ["BASE"]}
