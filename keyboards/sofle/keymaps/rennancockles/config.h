@@ -9,6 +9,8 @@
 #define ENCODER_DIRECTION_FLIP
 // #define ENCODER_RESOLUTION 4
 
+#define COMBO_TERM 40
+
 #define OLED_FONT_H "cocklesgeekfont.c"
 
 #define RGBLIGHT_SLEEP
